@@ -21,7 +21,7 @@ class ActonSpectrometerHW(HardwareComponent):
         self.debug = False
         
         # Create logged quantities
-        self.settings.New('port', dtype=str, initial='COM5')
+        self.settings.New('port', dtype=str, initial='COM3')
         self.settings.New('echo', dtype=bool, initial=True) # if serial port echo is enabled, USB echo should be disabled
         
         self.settings.New(
